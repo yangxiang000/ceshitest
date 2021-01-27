@@ -69,15 +69,10 @@ def x2list(expected_len, raw_material):
 #                      }
 
 # 接口函数
-def post(request, fromList=[]):
+def post(request):
     if request.method == 'POST':  # 当提交表单时
         # 判断是否传参
         if request.POST:
-            for value in fromList:
-                if request.POST.get(value, 0):
-                    continue
-                else:
-                    return JsonResponse({'rspCd': 500, 'rspInf': '{}参数未传'.format(value)})
             return False
         else:
             return JsonResponse({'rspCd': 500, 'rspInf': '参数未传'})
