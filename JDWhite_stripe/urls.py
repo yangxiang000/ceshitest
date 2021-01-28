@@ -21,5 +21,6 @@ urlpatterns = {
     path('admin/', admin.site.urls),
     path('index/', myapp.views.index),
     path('mobile-jd/mobile/merchant/pre-apply', myapp.HB_api.register.register),
-    path('mobile-jd/mobile/merchant/create-order', myapp.HB_api.order.create_order)
+    path('mobile-jd/mobile/merchant/create-order', myapp.HB_api.order.create_order),
+    path('mobile-jd/notify/sign-merchant-notify',myapp.HB_api)
 }

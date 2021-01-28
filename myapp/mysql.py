@@ -15,5 +15,7 @@ def sql(sqlstr):
 
 
 if (__name__ == '__main__'):
+    # sql(
+    #     "create table HB_pay_status (id int primary key ,brwOrdNo char(100),merchId char(100),brwOrdD char(100),ordType char(100),payType char(100),merNo char(100),depId char(100),depNm char(100),productNm char(100),productId char(100),payAmt char(100),loanAmt char(100),loanMonth char(100),mblNo char(100),cusNm char(100),usrProv char(100),mngModel char(100),busTyp char (100),depProvNo char(100),oprId char(100),oprMblNo char(100),rpyDay char(100),appId char(100),appNm char(100),pkgTyp char(100),provinceRate char(100),bonusAmount char(100),needPayFlag char(100));")
     sql(
-        "create table HB_pay_status (id int primary key ,brwOrdNo char(100),merchId char(100),brwOrdD char(100),ordType char(100),payType char(100),merNo char(100),depId char(100),depNm char(100),productNm char(100),productId char(100),payAmt char(100),loanAmt char(100),loanMonth char(100),mblNo char(100),cusNm char(100),usrProv char(100),mngModel char(100),busTyp char (100),depProvNo char(100),oprId char(100),oprMblNo char(100),rpyDay char(100),appId char(100),appNm char(100),pkgTyp char(100),provinceRate char(100),bonusAmount char(100),needPayFlag char(100));")
+        "create table HB_merchant_notify (id int primary key auto_increment,orderNo char(100),merNo char(100),storeId char(100),auditResult char(100),auditDescribe char(100));")
