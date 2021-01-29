@@ -41,4 +41,3 @@ s = {
     "oprMblNo": "13677777777"}
 a=requests.post('http://127.0.0.1:8000/post_api',data=
 {'date':jiami(s)})
-print()
